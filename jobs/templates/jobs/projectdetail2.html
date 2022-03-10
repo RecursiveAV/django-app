@@ -1,0 +1,620 @@
+
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HX63517VFF"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-HX63517VFF');
+  </script>
+
+  <!-- Required meta tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="{% static 'css/vendors.css' %}">
+  <link rel="stylesheet" href="{% static 'css/main.css' %}">
+
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="img/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="img/favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  <title>Recursive Digital - Case Study: Olypmics - London 2012</title>
+</head>
+
+<body class="preloader-visible" data-barba="wrapper">
+
+
+  <!-- preloader start -->
+  <div class="preloader js-preloader">
+    <div class="preloader__bg"></div>
+
+    <div class="preloader__progress">
+      <div class="preloader__progress__inner"></div>
+    </div>
+  </div>
+  <!-- preloader end -->
+
+
+  <!-- cursor start -->
+  <div class="cursor js-cursor">
+    <div class="cursor__wrapper">
+      <div class="cursor__follower js-follower"></div>
+      <div class="cursor__label js-label"></div>
+      <div class="cursor__icon js-icon"></div>
+    </div>
+  </div>
+  <!-- cursor end -->
+
+
+  <!-- barba container start -->
+  <div class="barba-container" data-barba="container">
+
+    <!-- to-top-button start -->
+    <div data-cursor class="backButton js-backButton">
+      <span class="backButton__bg"></span>
+      <div class="backButton__icon__wrap">
+        <i class="backButton__button js-top-button" data-feather="arrow-up"></i>
+      </div>
+    </div>
+    <!-- to-top-button end -->
+
+
+    <main class="">
+
+
+       <!-- header start -->
+      <header class="header -dark -sticky-dark js-header-dark -classic js-header">
+        <!-- header__bar start -->
+        <div class="header__bar">
+          <div class="overflow-hidden">
+            <div class="header__logo js-header-logo">
+              <a data-barba href="index.html">
+                <img class="header__logo__light" src="{% static 'logo-light.png' %}" alt="logo">
+              </a>
+              <a data-barba href="index.html">
+                <img class="header__logo__dark" src="{% static 'Recursive_Logo_200b.png' %}" alt="logo">
+              </a>
+            </div>
+          </div>
+
+          <div class="navClassic-wrap js-header-menu-classic">
+            <ul class="navClassic-list js-navClassic-list">
+              <li>
+                 <a data-barba href="{% url 'index' %}">
+                  Home
+                </a>
+              </li>
+        <li>
+                <a data-barba href="{% url 'about' %}">
+
+
+                  About Us
+                </a>
+              </li>
+         <li>
+                <a data-barba href="{% url 'our_work' %}">
+                  Our Work
+                </a>
+              </li>
+
+         <li>
+                <a data-barba href="c{% url 'career' %}">
+                  Career
+                </a>
+              </li>
+        <li>
+                <a data-barba href="{% url 'lab' %}">
+                  The Lab
+                </a>
+              </li>
+         <li>
+                <a data-barba href="{% url 'contact' %}">
+                  Contact
+                </a>
+              </li>
+
+            </ul>
+          </div>
+
+          <div class="header__menu__wrap overflow-hidden">
+            <div class="header__menu js-header-menu">
+              <button type="button" class="nav-button-open js-nav-open">
+                <i class="icon" data-feather="menu"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- header__bar end -->
+
+
+        <!-- nav start -->
+        <nav class="nav js-nav">
+          <div class="nav__inner js-nav-inner">
+            <div class="nav__bg js-nav-bg"></div>
+
+            <div class="nav__container">
+              <div class="nav__header">
+                <button type="button" class="nav-button-back js-nav-back">
+                  <i class="icon" data-feather="arrow-left-circle"></i>
+                </button>
+
+                <button type="button" class="nav-btn-close js-nav-close pointer-events-none">
+                  <i class="icon" data-feather="x"></i>
+                </button>
+              </div>
+
+              <div class="nav__content">
+                <div class="nav__content__left">
+                  <div class="navList__wrap">
+                    <ul class="navList js-navList">
+                      <li>
+                        <a data-barba href="{% url 'index' %}">
+                          Home
+                        </a>
+                      </li>
+
+                      <li>
+                        <a data-barba href="{% url 'about' %}">
+                          About Us
+                        </a>
+                      </li>
+
+                      <li>
+                        <a data-barba href="{% url 'our_work' %}">
+                          Our Work
+                        </a>
+                      </li>
+
+
+                      <li>
+                        <a data-barba href="{% url 'career' %}">
+                          Career
+                        </a>
+                      </li>
+
+                      <li>
+                       <a data-barba href="{% url 'lab' %}">
+                           The Lab
+                        </a>
+                      </li>
+                      <li>
+                      <a data-barba href="{% url 'contact' %}">
+                        Contact
+                      </a>
+                      </li>
+
+
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="nav__content__right">
+                  <div class="nav__info">
+                    <div class="nav__info__item js-navInfo-item">
+                      <h5 class="text-sm tracking-none fw-500">
+                        Address
+                      </h5>
+
+                      <div class="nav__info__content text-lg text-white mt-16">
+                        <p>
+                          Recursive Digital
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="nav__info__item js-navInfo-item">
+                      <h5 class="text-sm tracking-none fw-500">
+                        Socials
+                      </h5>
+                      <div class="nav__info__content text-lg text-white mt-16">
+                        <a href="https://www.linkedin.com/company/recursivedigital" target="_blank">Linkedin</a>
+                        <a href="https://www.instagram.com/recursive.digital/" target="_blank">Instagram</a>
+                        <a href="https://twitter.com/Recursive_digi" target="_blank">Twitter</a>
+                        <a href="https://vimeo.com/recursivedigital" target="_blank">Vimeo</a>
+                      </div>
+
+                    </div>
+
+                    <div class="nav__info__item js-navInfo-item">
+                      <h5 class="text-sm tracking-none fw-500">
+                        Contact Us
+                      </h5>
+
+                      <div class="nav__info__content text-lg text-white mt-16">
+                        <a href="mailto:info@recursive.digital?subject=General Inquire">recursive@recursive.digital</a>
+                        <a href="#">+44 (0) 1323 379870 </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <!-- nav end --> </header>
+        <!-- header end -->
+        <!-- page header start -->
+        <section class="masthead -type-work-1 -full-screen bg-black sm:text-center js-masthead-type-work-1 js-bg">
+
+          <div data-parallax="0.7" class="masthead__bg overlay-black-md js-image">
+            {% if  job.video_checkbox == 0 %}
+              <div data-parallax-target="" class="bg-image js-lazy js-bg-item" data-bg="{{ job.project_header_image.url }}"></div>
+            {% else %}
+            <video loop  width="100%" height="100%" muted controls autoplay playsinline data-parallax-target class="bg-image js-lazy js-bg-item" data-src="{{ job.project_header_video.url }}">
+                <source src="#" type="video/mp4" data-bg="{{ job.project_header_video.url }}"/>
+                </video>
+            {% endif %}
+
+          </div>
+          <div class="masthead__content">
+            <div class="container-fluid">
+              <div class="row justify-content-center">
+                <div class="col-xl-10 col-sm-10 z-3">
+
+                  <div data-split="lines">
+                    <h1 class="masthead__title text-white fw-700 js-title">{{ job.project_text }}</h1>
+                  </div>
+                  <div class="masthead__info__wrap">
+                    <div class="row y-gap-32">
+                      <div class="col-lg-auto  col-sm-6">
+                        <div class="masthead__info">
+                          <div data-split="lines" class="masthead__item js-info-item">
+                            <h5 class="text-lg leading-sm fw-600 text-white">Role</h5>
+                            <p class="text-lg leading-sm text-light mt-12 sm:mt-8">
+                             {{ job.project_services}}</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-auto offset-lg-1 col-sm-6">
+                        <div class="masthead__info">
+                          <div data-split="lines" class="masthead__item js-info-item">
+                            <h5 class="text-lg leading-sm fw-600 text-white"></h5>
+
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-auto offset-lg-1 col-sm-6">
+                        <div class="masthead__info">
+                          <div data-split="lines" class="masthead__item js-info-item">
+                            <h5 class="text-lg leading-sm fw-600 text-white">Duration</h5>
+                            <p class="text-lg leading-sm text-light mt-12 sm:mt-8">{{ job.project_duration}}</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-auto offset-lg-1 col-sm-6">
+                        <div class="masthead__info">
+                          <div data-split="lines" class="masthead__item js-info-item">
+                            <h5 class="text-lg leading-sm fw-600 text-white">Client</h5>
+                            <a target="_blank" href="">
+                               <p class="text-lg leading-sm text-light mt-12 sm:mt-8">{{ job.project_client}}</p></a>
+                              </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </section>
+        <!-- page header end -->
+        <!-- section start -->
+        <section class="layout-pt-lg layout-pb-lg bg-dark-1">
+          <!-- container start -->
+          <div class="container">
+            <!-- row start -->
+            <div class="row justify-content-between">
+              <div class="col-auto">
+                <div class="d-flex text-xs tracking-md pt-4">
+                  <p class="text-accent fw-600 mr-16">01.-</p>
+                  <p class="text-light uppercase fw-500">The client&nbsp;</p>
+                </div>
+              </div>
+              <div class="col-xl-7 col-lg-8">
+                <div class="md:mt-20">
+                  <h2 class="text-3xl fw-600 text-white">{{ job.project_01_intro}}</h2>
+                  <p class="leading-5xl text-light mt-24 sm:mt-16">{{ job.project_01_main}}</p>
+                </div>
+              </div>
+            </div>
+            <!-- row end --> </div>
+          <!-- container end --> </section>
+        <!-- section end -->
+
+        <!-- section start -->
+        <div class="bg-dark-1">
+          <div data-parallax="0.7" class="h-100vh">
+            <div data-parallax-target="" class="bg-image js-lazy" data-bg="{{ job.project_01_image.url }}"></div>
+          </div>
+        </div>
+        <!-- section end -->
+        <!-- section start -->
+        <section class="layout-pt-lg layout-pb-lg bg-dark-1">
+          <!-- container start -->
+          <div class="container">
+            <!-- row start -->
+            <div class="row justify-content-between">
+              <div class="col-auto">
+                <div class="d-flex text-xs tracking-md pt-4">
+                  <p class="text-accent fw-600 mr-16">02.-</p>
+                  <p class="text-light uppercase fw-500">The brief&nbsp;</p>
+                </div>
+              </div>
+              <div class="col-xl-7 col-lg-8">
+                <div class="md:mt-20">
+                  <h2 class="text-3xl fw-600 text-white">{{ job.project_02_intro}}</h2>
+                  <p class="leading-5xl text-light mt-24 sm:mt-16">{{ job.project_02_main}}</p>
+                 <p class="leading-5xl text-light mt-24 sm:mt-16">&nbsp;  </p>
+                </div>
+              </div>
+            </div>
+            <!-- row end --> </div>
+          <!-- container end --> </section>
+        <!-- section end -->
+      		    <!-- section start -->
+      <div>
+        <div class="js-section-slider bg-dark-1" data-slider-col="base-2 lg-2 md-1 sm-1" data-gap="40" data-loop data-center data-pagination>
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide slider-slide">
+              <div class="ratio ratio-3:2 bg-image swiper-lazy" data-background="{{ job.project_02_image1.url }}"></div>
+            </div>
+
+            <div class="swiper-slide slider-slide">
+              <div class="ratio ratio-3:2 bg-image swiper-lazy" data-background="{{ job.project_02_image2.url }}"></div>
+            </div>
+
+            <div class="swiper-slide slider-slide">
+              <div class="ratio ratio-3:2 bg-image swiper-lazy" data-background="{{ job.project_02_image3.url }}"></div>
+            </div>
+
+          </div>
+
+          <div class="pagination -light pb-4 mt-48 js-pagination"></div>
+        </div>
+      </div>
+      <!-- section end -->
+        <!-- section start -->
+        <section class="layout-pt-lg layout-pb-lg bg-dark-1">
+          <!-- container start -->
+          <div class="container">
+            <!-- row start -->
+            <div class="row justify-content-between">
+              <div class="col-auto">
+                <div class="d-flex text-xs tracking-md pt-4">
+                  <p class="text-accent fw-600 mr-16">03.-</p>
+                  <p class="text-light uppercase fw-500">The challenge&nbsp;</p>
+                </div>
+              </div>
+              <div class="col-xl-7 col-lg-8">
+                <div class="md:mt-20">
+                  <h2 class="text-3xl fw-600 text-white">{{ job.project_03_intro}}</h2>
+                  <p class="leading-5xl text-light mt-24 sm:mt-16">{{ job.project_03_main }}</p>
+                  <p class="leading-5xl text-light mt-24 sm:mt-16">&nbsp;</p>
+                </div>
+              </div>
+            </div>
+            <!-- row end --> </div>
+
+		<!-- container end -->
+		  <!-- container start -->
+          <div class="container">
+            <!-- row start -->
+            <div class="row justify-content-between">
+              <div class="col-auto">
+                <div class="d-flex text-xs tracking-md pt-4">
+                  <p class="text-accent fw-600 mr-16">04.-</p>
+                  <p class="text-light uppercase fw-500">The Outcome&nbsp;</p>
+                </div>
+              </div>
+              <div class="col-xl-7 col-lg-8">
+                <div class="md:mt-20">
+                  <h2 class="text-3xl fw-600 text-white">{{ job.project_04_intro}}</h2>
+                  <p class="leading-5xl text-light mt-24 sm:mt-16">{{ job.project_04_main}}</p>
+                  <p class="leading-5xl text-light mt-24 sm:mt-16">&nbsp;</p>
+                </div>
+              </div>
+            </div>
+            <!-- row end --> </div>
+			 <!-- container start -->
+          <div class="container">
+             <!-- row start -->
+            <!-- row end --> </div>
+			 <!-- container start -->
+          <div class="container">
+            <!-- row start -->
+            <div class="row justify-content-between">
+              <div class="col-auto">
+                <div class="d-flex text-xs tracking-md pt-4">
+                  <p class="text-accent fw-600 mr-16">05.-</p>
+                  <p class="text-light uppercase fw-500">Media &amp; Press&nbsp;&nbsp;</p>
+                </div>
+              </div>
+              <div class="col-xl-7 col-lg-8">
+                <div class="md:mt-20">
+                  <p class="text-light"> <a target="_blank" href=""><u>{{ job.project_05_link1 }}</u></a></p>
+                  <p class="text-light"> <a target="_blank" href=""><u>{{ job.project_05_link2 }}</u></a></p>
+                  <p class="text-light"> <a target="_blank" href=""><u>{{ job.project_05_link3 }}</u></a></p>
+				  <p class="text-light">&nbsp;</p>
+           </div>
+              </div>
+            </div>
+            <!-- row end --> </div>
+
+<!-- container start -->
+          <div class="container">
+            <!-- row start -->
+            <div class="row justify-content-between">
+              <div class="col-auto">
+                <div class="d-flex text-xs tracking-md pt-4">
+                  <p class="text-accent fw-600 mr-16">06.-</p>
+                  <p class="text-light uppercase fw-500">Key Partners</p>
+                </div>
+              </div>
+
+
+            <div class="col-xl-7 col-lg-8">
+            <div class="md:mt-20">
+                <p class="text-light"> <a target="_blank" href=""><u><p class="text-light"> <a target="_blank" href=""><u>{{ job.project_06_link1 }}</u></a></p></u></a></p>
+                <p class="text-light"> <a target="_blank" href=""><u><p class="text-light"> <a target="_blank" href=""><u>{{ job.project_06_link2 }}</u></a></p></u></a></p>
+                <p class="text-light"> <a target="_blank" href=""><u><p class="text-light"> <a target="_blank" href=""><u>{{ job.project_06_link3 }}</u></a></p></u></a></p>
+                </div>
+                          </div>
+            </div>
+            <!-- row end --> </div>
+          <!-- container end --> </section>
+        <!-- section end -->
+          <!-- THIRD section start -->
+       <!-- row end -->
+    <!-- container end -->
+    <!-- section end -->
+    <!-- section start -->
+    <section class="projects-nav">
+      <!-- row start -->
+      <div class="row no-gutters">
+        <div class="col-lg-6"> <a data-barba="" href="{{ prev }}"
+            class="projects-nav__item -prev bg-dark-1">
+            <div class="projects-nav__img">
+              <div class="bg-image js-lazy" data-bg=""></div>
+            </div>
+            <div class="projects-nav__content">
+              <div class="projects-nav__icon"> <i class="size-xl str-width-xs text-white"
+                  data-feather="arrow-left-circle"></i>
+              </div>
+              <h3 class="text-4xl fw-400 tracking-none text-white">Previous Project</h3>
+              <p class="projects-nav__text -prev text-sm fw-500 text-white tracking-md uppercase">
+                PREV </p>
+            </div>
+          </a> </div>
+        <div class="col-lg-6"> <a data-barba="" href="{{ next }}"
+            class="projects-nav__item -next bg-dark-1">
+            <div class="projects-nav__img">
+              <div class="bg-image js-lazy" data-bg=""></div>
+            </div>
+            <div class="projects-nav__content">
+              <h3 class="text-4xl fw-400 tracking-none text-white">Next Project</h3>
+              <div class="projects-nav__icon"> <i class="size-xl str-width-xs text-white"
+                  data-feather="arrow-right-circle"></i>
+              </div>
+              <p class="projects-nav__text -next text-sm fw-500 text-white tracking-md uppercase">
+                NEXT </p>
+            </div>
+          </a> </div>
+      </div>
+      <!-- row end --> </section>
+    <!-- section end -->
+    <!-- footer start -->
+    <footer class="footer -type-1 bg-dark-1">
+      <!-- container start -->
+      <div class="container">
+        <div class="footer__top">
+          <!-- row start -->
+          <div class="row y-gap-48 justify-content-between">
+            <div class="col-lg-auto col-sm-12"> <a href="index.html" class="footer__logo text-white">
+                Recursive <br>
+                Digital </a> </div>
+            <div class="col-lg-3 col-sm-6">
+              <h4 class="text-xl fw-500 text-white"> Studio </h4>
+              <div class="footer__content text-base text-light mt-16 sm:mt-12">
+                {% for contact in contact.all %}
+                <p>{{ contact.building }}</p>
+                <p>{{ contact.street }}</p>
+                <p>{{ contact.town }}</p>
+                <p>{{ contact.postcode }}</p>
+                <p>{{ contact.country }}</p>
+                <p class="mt-8"><a href="mailto:info@recursive.digital?subject=General%20Inquire">{{ contact.email }}</a></p>
+                <p class="mt-8">{{ contact.telephone }}</p>
+                {% endfor %}
+            </div>
+          </div>
+            <div class="col-lg-auto col-sm-4">
+              <h4 class="text-xl fw-500 text-white"> Links </h4>
+              <div class="footer__content text-base text-light mt-16 sm:mt-12">
+                <div><a data-barba="" href="{% url 'index' %}" class="button -underline mt-4">Home</a></div>
+                <div><a data-barba="" href="{% url 'our_work' %}" class="button -underline mt-4">Our
+                    Work</a></div>
+                <div><a data-barba="" href="{% url 'about' %}" class="button -underline mt-4">About
+                    Us</a></div>
+                <div><a data-barba="" href="{% url 'career' %}" class="button -underline mt-4">Career</a></div>
+                <div><a data-barba="" href="{% url 'lab' %}"
+                    target="_blank"
+                    class="button -underline">The Lab</a></div>
+                <div><a data-barba="" href="{% url 'contact' %}" class="button -underline mt-4">Contact</a></div>
+              </div>
+            </div>
+            <div class="col-lg-auto col-auto">
+              <h4 class="text-xl fw-500 text-white"> Follow us </h4>
+              <div class="social -bordered mt-16 sm:mt-12"> <a class="social__item text-white border-light"
+                  href="https://www.linkedin.com/company/recursivedigital"
+                  target="_blank">
+                  <i class="fa fa-linkedin"></i> </a> <a class="social__item text-white border-light"
+                  href="https://www.instagram.com/recursive.digital/"
+                  target="_blank">
+                  <i class="fa fa-instagram"></i> </a> <a class="social__item text-white border-light"
+                  href="https://twitter.com/Recursive_digi"
+                  target="_blank">
+                  <i class="fa fa-twitter-square"></i> </a> <a class="social__item text-white border-light"
+                  href="https://vimeo.com/recursivedigital"
+                  target="_blank">
+                  <i class="fa fa-vimeo"></i> </a> </div>
+            </div>
+          </div>
+          <!-- row end --> </div>
+        <div class="footer__bottom -light">
+          <!-- row start -->
+          <div class="row">
+            <div class="col">
+              <div class="footer__copyright">
+                <p class="text-light"> © Recursive <script>document.write(new Date().getFullYear())</script> - All Rights
+                  Reserved </p>
+              </div>
+            </div>
+          </div>
+          <!-- row end -->
+        </div>
+
+      </div>
+      <!-- container end -->
+    </footer>
+    <!-- footer end -->
+
+    </main>
+
+  </div>
+    <!-- barba container end -->
+
+
+    <!-- JavaScript -->
+    <script src="{% static 'js/vendors.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+
+</body>
+</html>
