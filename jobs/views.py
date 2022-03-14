@@ -11,7 +11,12 @@ from .models import Contact
 from .models import About
 from .models import Our_Work
 from .models import Case_Studies
+from pythonosc.udp_client import SimpleUDPClient
+
 # Create your views here.
+ip = "127.0.0.1"
+port = 1337
+client = SimpleUDPClient(ip, port)  # Create client
 
 
 def index(request):
@@ -30,6 +35,8 @@ def index(request):
 def lab(request):
     jobs = Lab.objects
     contact = Contact.objects
+
+    client.send_message("/", "Lab")
     return render(request, 'jobs/lab.html', {'jobs': jobs, 'contact': contact})
 
 
@@ -38,16 +45,19 @@ def about(request):
     contact = Contact.objects
     images = About.objects
     #These terms create dictionary entries which are then referenced in the templates to render the data within a for loop inside the html
+    client.send_message("/", "About")
     return render(request, 'jobs/about.html', {'contact': contact, 'images': images})
 
 
 def career(request):
     contact = Contact.objects
+    client.send_message("/", "Career")
     return render(request, 'jobs/career.html', {'contact': contact})
 
 
 def contact(request):
     contact = Contact.objects
+    client.send_message("/", "Contact")
     return render(request, 'jobs/contact.html', {'contact': contact})
 
 
@@ -57,6 +67,7 @@ def our_work(request):
     testimonials = Testimonials.objects
     contact = Contact.objects
     case_studies = Case_Studies.objects
+    client.send_message("/", "Our Work")
     return render(request, 'jobs/our_work.html', {'images': images, 'clients': clients, 'testimonials': testimonials, 'contact': contact, 'case_studies': case_studies})
 
 

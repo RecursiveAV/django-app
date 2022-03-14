@@ -248,9 +248,6 @@ class Case_Studies(models.Model):
     project_client = models.CharField(
         max_length=130, null=True, blank=True, verbose_name="client's name")
 
-    project_complete = models.BooleanField(
-        "Is this Case Study Complete? (y/n)", default=0, blank=True)
-
     project_01_intro = models.CharField(
         max_length=130, null=True, blank=True, verbose_name="01-The Client intro text")
 

@@ -105,38 +105,12 @@
 
           <div class="navClassic-wrap js-header-menu-classic">
             <ul class="navClassic-list js-navClassic-list">
-              <li>
-                 <a data-barba href="index.html">
-                  Home
-                </a>
-              </li>
-				      <li>
-                <a data-barba href="team.html">
-                  About Us
-                </a>
-              </li>
-				      <li>
-                <a data-barba href="work.html">
-                  Our Work
-                </a>
-              </li>
-
-				      <li>
-                <a data-barba href="career.html">
-                  Career
-                </a>
-              </li>
-				      <li>
-                <a data-barba href="lab">
-                  The Lab
-                </a>
-              </li>
-				      <li>
-                <a data-barba href="contact.html">
-                  Contact
-                </a>
-              </li>
-
+              <li> <a data-barba="" href="{% url 'index' %}"> Home </a> </li>
+              <li> <a data-barba="" href="{% url 'about' %}"> About Us </a> </li>
+              <li> <a data-barba="" href="{% url 'our_work' %}"> Our Work </a> </li>
+              <li> <a data-barba="" href="{% url 'career' %}"> Career </a> </li>
+              <li> <a data-barba="" href="{% url 'lab' %}"> The Lab </a> </li>
+              <li> <a data-barba="" href="{% url 'contact' %}"> Contact </a> </li>
             </ul>
           </div>
 
@@ -171,42 +145,17 @@
                 <div class="nav__content__left">
                   <div class="navList__wrap">
                     <ul class="navList js-navList">
-                      <li>
-                        <a data-barba href="index.html">
-                          Home
-                        </a>
+                      <li> <a data-barba="" href="{% url 'index' %}">Home</a> </li>
+                      <li> <a data-barba="" href="{% url 'about' %}">About Us</a>
                       </li>
-
-						          <li>
-                        <a data-barba href="team.html">
-                          About Us
-                        </a>
+                      <li> <a data-barba="" href="{% url 'our_work' %}">Our Work</a>
                       </li>
-
-                      <li>
-                        <a data-barba href="work.html">
-                          Our Work
-                        </a>
+                      <li> <a data-barba="" href="{% url 'career' %}">Career</a>
                       </li>
-
-					           <li>
-                        <a data-barba href="career.html">
-                          Career
-                        </a>
+                      <li> <a data-barba="" href="{% url 'lab' %}">The Lab</a>
                       </li>
-
-                      <li>
-                       <a data-barba href="lab">
-                          The Lab
-                        </a>
+                      <li> <a data-barba="" href="{% url 'contact' %}">Contact</a>
                       </li>
-
-                      <li>
-                      <a data-barba href="contact.html">
-                        Contact
-                      </a>
-                      </li>
-
                     </ul>
                   </div>
                 </div>
@@ -723,6 +672,7 @@
                     {% for images in images.all %}
                     <div class="bg-image ratio ratio-3:4 js-lazy" data-bg="{{ images.david.url }}""></div>
                     {% endfor %}
+                    
                   </div>
                 </div>
 
@@ -881,7 +831,7 @@
                 Have a project of your own to discuss?
               </h2>
 
-              <a href="contact.html" class="button -md -white text-black mt-32">
+              <a href="{% url 'contact' %}" class="button -md -white text-black mt-32">
                 Get in Touch
               </a>
             </div>
@@ -923,17 +873,17 @@
                 </div>
 
                 <div class="col-lg-auto col-sm-4">
-                  <h4 class="text-xl fw-500 text-white">
-                    Links
-                  </h4>
+                  <h4 class="text-xl fw-500 text-white">Links</h4>
 
                   <div class="footer__content text-base text-light mt-16 sm:mt-12">
-                    <div><a data-barba href="index.html" class="button -underline mt-4">Home</a></div>
-					  <div><a data-barba href="team.html" class="button -underline mt-4">About Us</a></div>
-                    <div><a data-barba href="work.html" class="button -underline mt-4">Our Work</a></div>
-					  <div><a data-barba href="career.html" class="button -underline mt-4">Career</a></div>
-					  <div><a data-barba href="recursive_lab_page.html" class="button -underline">The Lab</a></div>
-					  <div><a data-barba href="contact.html" class="button -underline mt-4">Contact</a></div>
+                    <div><a data-barba="" href="{% url 'index' %}" class="button -underline mt-4">Home</a></div>
+                    <div><a data-barba="" href="{% url 'about' %}" class="button -underline mt-4">About
+                        Us</a></div>
+                    <div><a data-barba="" href="{% url 'our_work' %}" class="button -underline mt-4">Our
+                        Work</a></div>
+                    <div><a data-barba="" href="{% url 'career' %}" class="button -underline mt-4">Career</a></div>
+                    <div><a data-barba="" href="{% url 'lab' %}" class="button -underline">The Lab</a></div>
+                    <div><a data-barba="" href="{% url 'contact' %}" class="button -underline mt-4">Contact</a></div>
                   </div>
                 </div>
 
