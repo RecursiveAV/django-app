@@ -18,7 +18,8 @@ SECRET_KEY = os.getenv("DJANGO_SECRET_KEY", get_random_secret_key())
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = os.getenv("DJANGO_ALLOWED_HOSTS",
+                          "newportfolio-d4dnt.ondigitalocean.app",).split(",")
 
 DEVELOPMENT_MODE = os.getenv("DEVELOPMENT_MODE", "False") == "True"
 
@@ -31,7 +32,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'user_visit',
     'jobs',
 ]
 
@@ -43,7 +43,6 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'user_visit.middleware.UserVisitMiddleware',
 ]
 
 ROOT_URLCONF = 'newportfolio.urls'
@@ -77,10 +76,10 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'portfoliodb',
-        'USER': 'postgres',
-        'PASSWORD': 'django1234',
-        'HOST': 'localhost',
-        'PORT': '5432',
+        'USER': 'portfoliodb',
+        'PASSWORD': 'q8cqHeVwVPwX9Vcc',
+        'HOST': 'app-f30adc22-75ad-4aca-9f03-65690b976892-do-user-8663540-0.b.db.ondigitalocean.com',
+        'PORT': '25060',
     }
 }
 
