@@ -290,7 +290,7 @@
           <div class="row align-items-center ">
             <div class="col-lg-7 pr-48 md:pr-16">
               <div data-anim="img-right cover-dark-1 delay-1" data-parallax="0.9" class="ratio ratio-3:2">
-                <div data-parallax-target class="bg-image js-lazy" data-bg="img/career/Unreal_Engine.jpg"></div>
+                <div data-parallax-target class="bg-image js-lazy" data-bg="{% static 'Unreal Engine.png' %}"></div>
               </div>
             </div>
 
@@ -300,7 +300,7 @@
                   Unreal Developer
                 </p>
                 <p class="serviceCard__text text-light mt-16"> We are currently looking for a Unreal developer to help us with some new projects. Interested? Get in touch.  </p>
-                <a href="contact.html" data-barba class="button -icon fw-500 text-black mt-24 md:mt-24 sm:mt-20">
+                <a href="{% url 'contact' %}" data-barba class="button -icon fw-500 text-black mt-24 md:mt-24 sm:mt-20">
                   Apply Here
                   <i class="icon size-lg str-width-sm ml-8" data-feather="arrow-right-circle"></i>
                 </a>
